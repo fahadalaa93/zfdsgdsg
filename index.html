@@ -22,59 +22,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
            
             </div>
 
-            <div class="card">
-                <h2 class="card-title">Status</h2>
-                <div id="status-container">
-                    <p><span class="status-indicator status-running" id="status-icon"></span> <span id="status-text">Running exploit...</span></p>
-                    <div class="progress-container">
-                        <div class="progress-bar" id="progress-bar"></div>
-                    </div>
-                </div>
-                <!-- Run exploit and reset buttons removed -->
-            </div>
-
-            <div class="tabs">
-                <div class="tab active" data-tab="console">Console</div>
-                <!-- Payloads and settings tabs removed -->
-            </div>
- </div>
-
-            <!-- Payloads and settings tabs removed -->
-
-            <!-- Info content moved below console -->
-            <div class="card" style="margin-top: 20px;">
-                <h2 class="card-title">About PSFree</h2>
-               
-      <script>
-            // Initialize Remote Logger
-            document.addEventListener('DOMContentLoaded', function() {
-                // Try to get server IP from URL parameter
-                const urlParams = new URLSearchParams(window.location.search);
-                const serverIp = urlParams.get('server');
-
-                // Logger configuration
-                const loggerConfig = {
-                    enabled: true,
-                    localConsole: true
-                };
-
-                // If a server parameter is present, use it
-                if (serverIp) {
-                    loggerConfig.serverUrl = `http://${serverIp}:3000`;
-                }
-
-                // Initialize logger
-                window.RemoteLogger.init(loggerConfig);
-
-                // Log browser info
-                window.RemoteLogger.info('PSFree initialized', {
-                    userAgent: navigator.userAgent,
-                    url: window.location.href,
-                    timestamp: new Date().toISOString()
-                });
-            });
-        </script>
-        <script type="module" src="./alert.mjs"></script>
+            
     </body>
 </html>
 <!DOCTYPE html>
