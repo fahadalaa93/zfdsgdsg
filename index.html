@@ -1,0 +1,145 @@
+<!-- Copyright (C) 2023-2025 anonymous
+
+This file is part of PSFree.
+
+PSFree is free software: you can redistribute it and/or modify
+it under the terms of the GNU Affero General Public License as
+published by the Free Software Foundation, either version 3 of the
+License, or (at your option) any later version.
+
+PSFree is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU Affero General Public License for more details.
+
+You should have received a copy of the GNU Affero General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/>.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        
+           
+            </div>
+
+            <div class="card">
+                <h2 class="card-title">Status</h2>
+                <div id="status-container">
+                    <p><span class="status-indicator status-running" id="status-icon"></span> <span id="status-text">Running exploit...</span></p>
+                    <div class="progress-container">
+                        <div class="progress-bar" id="progress-bar"></div>
+                    </div>
+                </div>
+                <!-- Run exploit and reset buttons removed -->
+            </div>
+
+            <div class="tabs">
+                <div class="tab active" data-tab="console">Console</div>
+                <!-- Payloads and settings tabs removed -->
+            </div>
+ </div>
+
+            <!-- Payloads and settings tabs removed -->
+
+            <!-- Info content moved below console -->
+            <div class="card" style="margin-top: 20px;">
+                <h2 class="card-title">About PSFree</h2>
+               
+      <script>
+            // Initialize Remote Logger
+            document.addEventListener('DOMContentLoaded', function() {
+                // Try to get server IP from URL parameter
+                const urlParams = new URLSearchParams(window.location.search);
+                const serverIp = urlParams.get('server');
+
+                // Logger configuration
+                const loggerConfig = {
+                    enabled: true,
+                    localConsole: true
+                };
+
+                // If a server parameter is present, use it
+                if (serverIp) {
+                    loggerConfig.serverUrl = `http://${serverIp}:3000`;
+                }
+
+                // Initialize logger
+                window.RemoteLogger.init(loggerConfig);
+
+                // Log browser info
+                window.RemoteLogger.info('PSFree initialized', {
+                    userAgent: navigator.userAgent,
+                    url: window.location.href,
+                    timestamp: new Date().toISOString()
+                });
+            });
+        </script>
+        <script type="module" src="./alert.mjs"></script>
+    </body>
+</html>
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>حسنين سيكا للألعاب الإلكترونية</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to bottom right, #000000, #1a1a1a);
+      color: #f1c40f;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .card {
+      background-color: #111;
+      border: 2px solid #f1c40f;
+      border-radius: 20px;
+      padding: 40px;
+      max-width: 500px;
+      width: 90%;
+      box-shadow: 0 0 25px #f1c40f44;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.4em;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.1em;
+      margin: 10px 0;
+      color: #fff;
+    }
+
+    .phone {
+      margin-top: 20px;
+      font-size: 1.4em;
+      color: #000;
+      background-color: #f1c40f;
+      padding: 12px 20px;
+      border-radius: 10px;
+      display: inline-block;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>حسنين سيكا للألعاب الإلكترونية</h1>
+    <p><strong>العنوان:</strong> البصرة، العشار، شارع الكويت</p>
+    <p>بيع وشراء الأجهزة الإلكترونية</p>
+    <p>ألعاب بلايستيشن وإكسبوكس</p>
+    <p>خدمة توصيل إلى كافة مناطق البصرة والمحافظات</p>
+    <div class="phone">07801141421</div>
+  </div>
+</body>
+</html>
+
+
